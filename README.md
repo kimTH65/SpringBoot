@@ -160,3 +160,49 @@ public class BoardController {
 
 ```
 
+#
+
+<h3>6. View 생성</h3>
+
+<div align="center"><h6>practice/src/main/resources/templates</h6></div>
+
+```
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .layout{
+        width : 500px;
+        margin : 0 auto;
+        margin-top : 40px;
+    }
+
+</style>
+<body>
+<div class="layout">
+    <input type="button" value="글쓰기" onclick="location.href='/board/write'" />
+    <table>
+        <thead>
+            <tr>
+                <th>글번호</th>
+                <th>제목</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="board : ${list}">
+                <td th:text="${board.id}"></td>
+                <td >
+                    <a th:text="${board.title}" th:href="@{/board/view(id=${board.id})}"></a>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+
+```
