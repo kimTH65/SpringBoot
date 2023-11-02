@@ -50,7 +50,12 @@ public class Board {
 
 #
 
-<h3>3. entity 생성 </h3>
+<h3>3. Repository 생성(JPARepository 사용) </h3>
+
+<h5>
+  　　Repository란 : Entity에 의해 생성된 DB에 접근하는 메서드 들을 사용하기 위한 인터페이스 <br><br>
+  　　JPARepository : 자바 어플리케이션과 데이터베이스의 브릿지 역할을 하며 JDK(자바 개발 키트)에 포함되어 있다 <br>
+</h5>
 
 <div align="center"><h6>practice/src/main/java/com/example/practice/entity/Board.java</h6></div>
 
