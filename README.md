@@ -71,3 +71,122 @@ public interface BoardRepository extends JpaRepository<Board,Integer> {
 }
 ```
 
+#
+
+<h3>4. Service(비즈니스 로직 수행) 생성</h3>
+
+<div align="center"><h6>practice/src/main/java/com/example/practice/service/BoardService.java</h6></div>
+
+```
+package com.example.practice.service;
+
+import com.example.practice.entity.Board;
+import com.example.practice.repository.BoardRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class BoardService {
+
+    @Autowired
+    private BoardRepository boardRepository;
+
+    public void write(Board board){
+        boardRepository.save(board);
+    }
+
+    public List<Board> boardList(){
+        return boardRepository.findAll();
+    }
+
+    public Board boardView(Integer id){
+
+        return boardRepository.findById(id).get();
+    }
+
+    public void boardDelete(Integer id){
+
+       boardRepository.deleteById(id);
+    }
+
+}
+```
+
+#
+
+<h3>5. Controller(사용자의 요청 처리) 생성</h3>
+
+<div align="center"><h6>practice/src/main/java/com/example/practice/controller/BoardController.java</h6></div>
+
+```
+package com.example.practice.controller;
+
+import com.example.practice.entity.Board;
+import com.example.practice.repository.BoardRepository;
+import com.example.practice.service.BoardService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+
+@Controller
+public class BoardController {
+
+    @Autowired
+    private BoardService boardService;
+
+    @GetMapping("/board/write")
+    public String boardWrite(){
+        return "BoardWrite";
+    }
+
+    @GetMapping("/board/boardWriteDo")
+    public String boardWriteDO(Board board){
+
+        boardService.write(board);
+        return "redirect:/board/list";
+    }
+
+    @GetMapping("/board/list")
+    public String boardList(Model model){
+        model.addAttribute("list",boardService.boardList());
+        return "BoardList";
+    }
+
+    @GetMapping("/board/view")
+    public String boardView(Model model,Integer id){
+        model.addAttribute("board",boardService.boardView(id));
+        return "BoardView";
+    }
+
+    @GetMapping("/board/delete")
+    public String boardDelete(Integer id){
+        boardService.boardDelete(id);
+
+        return "redirect:/board/list";
+    }
+
+    @GetMapping("/board/modify/{id}")
+    public String boardModify(Model model,@PathVariable("id") Integer id){
+
+        model.addAttribute("board",boardService.boardView(id));
+        return "boardModify";
+    }
+
+    @GetMapping("/board/update/{id}")
+    public String boardModify(@PathVariable("id") Integer id,Board board){
+
+        Board boardTemp = boardService.boardView(id);
+        boardTemp.setTitle(board.getTitle());
+        boardTemp.setContent(board.getContent());
+
+        boardService.write(boardTemp);
+        return "redirect:/board/list";
+    }
+}
+
+```
+
