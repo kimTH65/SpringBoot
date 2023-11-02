@@ -156,37 +156,7 @@ public class BoardController {
         return "BoardList";
     }
 
-    @GetMapping("/board/view")
-    public String boardView(Model model,Integer id){
-        model.addAttribute("board",boardService.boardView(id));
-        return "BoardView";
-    }
-
-    @GetMapping("/board/delete")
-    public String boardDelete(Integer id){
-        boardService.boardDelete(id);
-
-        return "redirect:/board/list";
-    }
-
-    @GetMapping("/board/modify/{id}")
-    public String boardModify(Model model,@PathVariable("id") Integer id){
-
-        model.addAttribute("board",boardService.boardView(id));
-        return "boardModify";
-    }
-
-    @GetMapping("/board/update/{id}")
-    public String boardModify(@PathVariable("id") Integer id,Board board){
-
-        Board boardTemp = boardService.boardView(id);
-        boardTemp.setTitle(board.getTitle());
-        boardTemp.setContent(board.getContent());
-
-        boardService.write(boardTemp);
-        return "redirect:/board/list";
-    }
-}
+...
 
 ```
 
