@@ -54,10 +54,20 @@ public class Board {
 
 <h5>
   　　Repository란 : Entity에 의해 생성된 DB에 접근하는 메서드 들을 사용하기 위한 인터페이스 <br><br>
-  　　JPARepository : 자바 어플리케이션과 데이터베이스의 브릿지 역할을 하며 JDK(자바 개발 키트)에 포함되어 있다 <br>
+  　　JPARepository : Spring Data JPA에서 제공하는 JPA 구현을 위한 인터페이스, 간단히 DB에 Create/Read/Update/Delete 쿼리를 수행 가능 <br>
 </h5>
 
-<div align="center"><h6>practice/src/main/java/com/example/practice/entity/Board.java</h6></div>
+<div align="center"><h6>practice/src/main/java/com/example/practice/repository/BoardRepository.java</h6></div>
 
+```
+package com.example.practice.repository;
+
+import com.example.practice.entity.Board;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface BoardRepository extends JpaRepository<Board,Integer> {
+}
 ```
 
