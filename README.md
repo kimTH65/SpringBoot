@@ -20,5 +20,39 @@ spring.datasource.password=1111
 
 #
 
-<h4>SpringBoot - CRUD Project</h4>
+<h3>2. 사용할 데이터 Model(Entity) 생성 </h3>
+
+<div align="center"><h6>practice/src/main/java/com/example/practice/entity/Board.java</h6></div>
+
+```
+package com.example.practice.entity;
+
+import lombok.Data;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+@Data
+public class Board {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private  Integer id;
+
+    private  String title;
+
+    private  String content;
+}
+```
+
+#
+
+<h3>3. entity 생성 </h3>
+
+<div align="center"><h6>practice/src/main/java/com/example/practice/entity/Board.java</h6></div>
+
+```
 
