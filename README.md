@@ -7,7 +7,7 @@
   　　jdbc : 자바 어플리케이션과 데이터베이스의 브릿지 역할을 하며 JDK(자바 개발 키트)에 포함되어 있음 <br>
 </h5>
 
-<div align="center"><h6><a href="practice/src/main/resources/application.properties">practice/src/main/resources/application.properties</a></h6></div>
+<div align="center"><a href="practice/src/main/resources/application.properties"><h6>practice/src/main/resources/application.properties</h6></a></div>
 
 ```
 server.port=8090
@@ -22,7 +22,7 @@ spring.datasource.password=1111
 
 <h3>2. 사용할 데이터 Model(Entity) 생성 </h3>
 
-<div align="center"><h6>practice/src/main/java/com/example/practice/entity/Board.java</h6></div>
+<div align="center"><a href="practice/src/main/java/com/example/practice/entity/Board.java"><h6>practice/src/main/java/com/example/practice/entity/Board.java</h6></a></div>
 
 ```
 package com.example.practice.entity;
@@ -57,7 +57,7 @@ public class Board {
   　　JPARepository : Spring Data JPA에서 제공하는 JPA 구현을 위한 인터페이스, 간단히 DB에 Create/Read/Update/Delete 쿼리를 수행 가능 <br>
 </h5>
 
-<div align="center"><h6>practice/src/main/java/com/example/practice/repository/BoardRepository.java</h6></div>
+<div align="center"><a href="practice/src/main/java/com/example/practice/repository/BoardRepository.java"><h6>practice/src/main/java/com/example/practice/repository/BoardRepository.java</h6></a></div>
 
 ```
 package com.example.practice.repository;
@@ -75,7 +75,7 @@ public interface BoardRepository extends JpaRepository<Board,Integer> {
 
 <h3>4. Service(비즈니스 로직 수행) 생성</h3>
 
-<div align="center"><h6>practice/src/main/java/com/example/practice/service/BoardService.java</h6></div>
+<div align="center"><a href="practice/src/main/java/com/example/practice/service/BoardService.java"><h6>practice/src/main/java/com/example/practice/service/BoardService.java</h6></a></div>
 
 ```
 package com.example.practice.service;
@@ -118,7 +118,7 @@ public class BoardService {
 
 <h3>5. Controller(사용자의 요청 처리) 생성</h3>
 
-<div align="center"><h6>practice/src/main/java/com/example/practice/controller/BoardController.java</h6></div>
+<div align="center"><a href="practice/src/main/java/com/example/practice/controller/BoardController.java"><h6>practice/src/main/java/com/example/practice/controller/BoardController.java</h6></a></div>
 
 ```
 package com.example.practice.controller;
@@ -164,7 +164,7 @@ public class BoardController {
 
 <h3>6. View 생성</h3>
 
-<div align="center"><h6>practice/src/main/resources/templates</h6></div>
+<div align="center"><a href="practice/src/main/resources/templates"><h6>practice/src/main/resources/templates</h6></a></div>
 
 ```
 <!DOCTYPE html>
