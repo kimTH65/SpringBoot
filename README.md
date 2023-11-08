@@ -7,7 +7,7 @@
   　　jdbc : 자바 어플리케이션과 데이터베이스의 브릿지 역할을 하며 JDK(자바 개발 키트)에 포함되어 있음 <br>
 </h5>
 
-<div align="center"><h6>practice/src/main/resources/application.properties</h6></div>
+<div align="center"><h6><a href="practice/src/main/resources/application.properties">practice/src/main/resources/application.properties</a></h6></div>
 
 ```
 server.port=8090
