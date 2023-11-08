@@ -3,8 +3,9 @@
 <h3>1. application.properties에 DB 접속 정보를 추가</h3>
 
 <h5>
-  　　application.properties : 외부 설정 파일로 애플리케이션 구동시 자동으로 로딩 되는 파일 <br><br>
-  　　jdbc : 자바 어플리케이션과 데이터베이스의 브릿지 역할을 하며 JDK(자바 개발 키트)에 포함되어 있음 <br>
+
+  - application.properties : 외부 설정 파일로 애플리케이션 구동시 자동으로 로딩 되는 파일 <br><br>
+  - jdbc : 자바 어플리케이션과 데이터베이스의 브릿지 역할을 하며 JDK(자바 개발 키트)에 포함되어 있음
 </h5>
 
 <div align="center"><h6><a href="practice/src/main/resources/application.properties">practice/src/main/resources/application.properties</a></h6></div>
@@ -59,8 +60,9 @@ public class Board {
 <h3>3. Repository 생성(JPARepository 사용) </h3>
 
 <h5>
-  　　Repository란 : Entity에 의해 생성된 DB에 접근하는 메서드 들을 사용하기 위한 인터페이스 <br><br>
-  　　JPARepository : Spring Data JPA에서 제공하는 JPA 구현을 위한 인터페이스, 간단히 DB에 Create/Read/Update/Delete 쿼리를 수행 가능 <br>
+ 
+ - Repository란 : Entity에 의해 생성된 DB에 접근하는 메서드 들을 사용하기 위한 인터페이스 <br><br>
+ - JPARepository : Spring Data JPA에서 제공하는 JPA 구현을 위한 인터페이스, 간단히 DB에 Create/Read/Update/Delete 쿼리를 수행 가능
 </h5>
 
 <div align="center">
