@@ -182,20 +182,10 @@ public class BoardController {
 </div>
 
 ```
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<style>
-    .layout{
-        width : 500px;
-        margin : 0 auto;
-        margin-top : 40px;
-    }
+  .
+  .
+  .
 
-</style>
 <body>
 <div class="layout">
     <input type="button" value="글쓰기" onclick="location.href='/board/write'" />
@@ -213,11 +203,8 @@ public class BoardController {
                     <a th:text="${board.title}" th:href="@{/board/view(id=${board.id})}"></a>
                 </td>
             </tr>
-
-        </tbody>
-    </table>
-</div>
-</body>
-</html>
+  .
+  .
+  .
 
 ```
