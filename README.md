@@ -162,7 +162,6 @@ public class BoardController {
         model.addAttribute("list",boardService.boardList());
         return "BoardList";
     }
-
   .
   .
   .
