@@ -32,14 +32,9 @@ spring.datasource.password=1111
 </div>
 
 ```
-package com.example.practice.entity;
-
-import lombok.Data;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+  .
+  .
+  .
 
 @Entity
 @Data
@@ -74,11 +69,9 @@ public class Board {
 </div>
 
 ```
-package com.example.practice.repository;
-
-import com.example.practice.entity.Board;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+  .
+  .
+  .
 
 @Repository
 public interface BoardRepository extends JpaRepository<Board,Integer> {
@@ -98,14 +91,9 @@ public interface BoardRepository extends JpaRepository<Board,Integer> {
 </div>
 
 ```
-package com.example.practice.service;
-
-import com.example.practice.entity.Board;
-import com.example.practice.repository.BoardRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import java.util.List;
+  .
+  .
+  .
 
 @Service
 public class BoardService {
@@ -147,16 +135,9 @@ public class BoardService {
 </div>
 
 ```
-package com.example.practice.controller;
-
-import com.example.practice.entity.Board;
-import com.example.practice.repository.BoardRepository;
-import com.example.practice.service.BoardService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+  .
+  .
+  .
 
 @Controller
 public class BoardController {
