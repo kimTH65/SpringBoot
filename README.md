@@ -182,9 +182,9 @@ public class BoardController {
         return "BoardList";
     }
 
-.
-.
-.
+    .
+    .
+    .
 
 ```
 
