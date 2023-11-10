@@ -8,7 +8,7 @@
   - jdbc : 자바 어플리케이션과 데이터베이스의 브릿지 역할을 하며 JDK(자바 개발 키트)에 포함되어 있음
 </h5>
 
-<div align="center"><h6><a href="practice/src/main/resources/application.properties">application.properties</a></h6></div>
+<div align="center"><h5><a href="practice/src/main/resources/application.properties">application.properties</a></h5></div>
 
 ```
 server.port=8090
@@ -24,11 +24,11 @@ spring.datasource.password=1111
 <h3>2. 사용할 데이터 Model(Entity) 생성 </h3>
 
 <div align="center">
-  <h6>
+  <h5>
     <a href="practice/src/main/java/com/example/practice/entity/Board.java">
-      Board.java
+      Entity
     </a>
-  </h6>
+  </h5>
 </div>
 
 ```
@@ -61,11 +61,11 @@ public class Board {
 </h5>
 
 <div align="center">
-  <h6>
+  <h5>
     <a href="practice/src/main/java/com/example/practice/repository/BoardRepository.java">
-      BoardRepository.java
+      Repository
     </a>
-  </h6>
+  </h5>
 </div>
 
 ```
@@ -83,11 +83,11 @@ public interface BoardRepository extends JpaRepository<Board,Integer> {
 <h3>4. Service(비즈니스 로직 수행) 생성</h3>
 
 <div align="center">
-  <h6>
+  <h5>
     <a href="practice/src/main/java/com/example/practice/service/BoardService.java">
-      BoardService.java
+      Service
     </a>
-  </h6>
+  </h5>
 </div>
 
 ```
@@ -127,11 +127,11 @@ public class BoardService {
 <h3>5. Controller(사용자의 요청 처리) 생성</h3>
 
 <div align="center">
-  <h6>
+  <h5>
     <a href="practice/src/main/java/com/example/practice/controller/BoardController.java">
-      BoardController.java
+      Controller
     </a>
-  </h6>
+  </h5>
 </div>
 
 ```
@@ -173,11 +173,11 @@ public class BoardController {
 <h3>6. View 생성</h3>
 
 <div align="center">
-  <h6>
+  <h5>
     <a href="practice/src/main/resources/templates">
-      templates
+      View
     </a>
-  </h6>
+  </h5>
 </div>
 
 ```
