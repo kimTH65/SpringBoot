@@ -8,7 +8,7 @@
   - jdbc : 자바 어플리케이션과 데이터베이스의 브릿지 역할을 하며 JDK(자바 개발 키트)에 포함되어 있음
 </h5>
 
-<div align="center"><h6><a href="practice/src/main/resources/application.properties">practice/src/main/resources/application.properties</a></h6></div>
+<div align="center"><h6><a href="practice/src/main/resources/application.properties">application.properties</a></h6></div>
 
 ```
 server.port=8090
@@ -26,7 +26,7 @@ spring.datasource.password=1111
 <div align="center">
   <h6>
     <a href="practice/src/main/java/com/example/practice/entity/Board.java">
-      practice/src/main/java/com/example/practice/entity/Board.java
+      Board.java
     </a>
   </h6>
 </div>
@@ -63,7 +63,7 @@ public class Board {
 <div align="center">
   <h6>
     <a href="practice/src/main/java/com/example/practice/repository/BoardRepository.java">
-      practice/src/main/java/com/example/practice/repository/BoardRepository.java
+      BoardRepository.java
     </a>
   </h6>
 </div>
@@ -85,7 +85,7 @@ public interface BoardRepository extends JpaRepository<Board,Integer> {
 <div align="center">
   <h6>
     <a href="practice/src/main/java/com/example/practice/service/BoardService.java">
-      practice/src/main/java/com/example/practice/service/BoardService.java
+      BoardService.java
     </a>
   </h6>
 </div>
@@ -129,7 +129,7 @@ public class BoardService {
 <div align="center">
   <h6>
     <a href="practice/src/main/java/com/example/practice/controller/BoardController.java">
-      practice/src/main/java/com/example/practice/controller/BoardController.java
+      BoardController.java
     </a>
   </h6>
 </div>
@@ -175,7 +175,7 @@ public class BoardController {
 <div align="center">
   <h6>
     <a href="practice/src/main/resources/templates">
-      practice/src/main/resources/templates
+      templates
     </a>
   </h6>
 </div>
