@@ -1,8 +1,9 @@
 
-<div align="right">
+<div align="left">
   <h5>
+    Language : 
     <a href="JP.md">日本語</a> 
-      &emsp;
+      ,
     <a href="US.md">English</a> 
   </h5>
 </div>
