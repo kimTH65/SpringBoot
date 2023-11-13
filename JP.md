@@ -1,6 +1,6 @@
 # SpringBoot - CRUD Practice
 
-<div algin="right">
+<div align="right">
   <h3>
     Language 
   </h3>
