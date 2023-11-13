@@ -1,5 +1,5 @@
 
-<div align="left">
+<div align="right">
   <h5>
     Language : 
     <a href="JP.md">日本語</a> 
