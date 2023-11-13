@@ -1,3 +1,4 @@
+# SpringBoot - CRUD Practice
 
 <div align="right">
   <h5>
@@ -7,10 +8,6 @@
     <a href="US.md">English</a> 
   </h5>
 </div>
-
-# SpringBoot - CRUD Practice
-
-<br>
 
 <h3>1. application.properties에 DB 접속 정보를 추가</h3>
 
