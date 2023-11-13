@@ -1,20 +1,17 @@
-# SpringBoot - CRUD Practice
 
 <div align="right">
-  <h3>
-    Language 
-  </h3>
   <h5>
     <a href="JP.md">日本語</a> 
       &emsp;
     <a href="US.md">English</a> 
   </h5>
 </div>
+
+# SpringBoot - CRUD Practice
+
 <br>
 
 <h3>1. application.properties에 DB 접속 정보를 추가</h3>
-
-#
 
 <h5>
 
