@@ -1,13 +1,15 @@
 # SpringBoot - CRUD Practice
 
-<h3>
-Language 
-</h3>
-<h5>
-<a href="README.md">한국어</a> 
-&emsp;
-<a href="US.md">English</a> 
-</h5>
+<div algin="right">
+  <h3>
+    Language 
+  </h3>
+  <h5>
+    <a href="README.md">한국어</a> 
+      &emsp;
+    <a href="US.md">English</a> 
+  </h5>
+</div>
 <br>
 
 <h3>1. application.propertiesにDB接続情報を追加</h3>
