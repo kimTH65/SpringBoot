@@ -132,7 +132,7 @@ public class BoardService {
 
 #
 
-<h3>5. Creact Controller</h3>
+<h3>5. Create Controller</h3>
 
 <div align="center">
   <h5>
