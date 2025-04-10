@@ -8,8 +8,6 @@
     <a href="US.md">English</a> 
   </h5>
 </div>
-SprintBoot + React
-<hr>
 <h3>1. application.properties에 DB 접속 정보를 추가</h3>
 
 <h5>
